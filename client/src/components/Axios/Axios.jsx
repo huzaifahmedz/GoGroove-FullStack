@@ -1,7 +1,7 @@
 import axios from "axios";
 
 let api = axios.create({
-  baseURL: "http://localhost:5800/products",
+  baseURL: "http://go-groove-backend.vercel.app/products",
 });
 
 export let getData = () => {
@@ -20,7 +20,7 @@ export let searchProduct =(keys)=>{
 
 // For User
 let userAPi = axios.create({
-  baseURL: "http://localhost:5800/user",
+  baseURL: "http://go-groove-backend.vercel.app/user",
 });
 
 export let postUser = (user) => {
