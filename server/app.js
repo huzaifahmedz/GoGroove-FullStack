@@ -14,7 +14,7 @@ dotenv.config();
 const app = express();
 
 // FOR PERSING DATA WITH BODYPARSER
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
 //.ENV DATA
