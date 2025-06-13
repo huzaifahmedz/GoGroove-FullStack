@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
 //.ENV DATA
-const port = process.env.PORT;
+const port = process.env.PORT||4000;
 const dbString = process.env.DBSTRING;
 
 //SETTING CORS
