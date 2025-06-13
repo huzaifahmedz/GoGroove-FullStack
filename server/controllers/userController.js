@@ -15,10 +15,8 @@ export let userCreateController = async (req, res) => {
 
   try {
     let hashedPassword = await HashPassword(password);
-    console.log(hashedPassword);
 
     let userId = generatingId("USER");
-    console.log(userId);
     let user = await userCreateService({
       userId,
       firstName,

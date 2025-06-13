@@ -34,6 +34,7 @@ const LoginForm = () => {
       // fetching data by loggin user
 
       let response = await userLogin(user);
+      console.log(user.password);
       console.log(response);
       if (response.status == 201) {
         Cookies.set("token", response.data.token);
@@ -73,7 +74,7 @@ const LoginForm = () => {
           <div className="w-full lg:w-1/2 py-4 px-8 flex flex-col justify-center">
             <h2 className="text-3xl mb-3">Log In</h2>
             <p className="mb-3">Welcome Back! Please Log In</p>
-            <form className="flex flex-col gap-2" onSubmit={handleSubmit}>
+            <form className="flex flex-col gap-2" onSubmit={()=>handleSubmit}>
               <div>
                 <input
                   type="text"
