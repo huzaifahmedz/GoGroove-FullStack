@@ -9,7 +9,7 @@ import ReactRouting from "./Router";
 const App = () => { 
   return ( 
     <>
-      <ReactRouting/>
+      <ReactRouting/> 
     </>
   );
 };
